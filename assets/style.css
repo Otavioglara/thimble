@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(23, 22, 22);
+    color: #fff;
+    
+}
+
+.game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#bet-button {
+    width: 20%;
+    align-self: center;
+    padding: 12px 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition:  0.3s;
+}
+
+#bet-button:hover {
+    background-color: #ffff;
+    color: #b51010;    
+}
+
+.cups-container {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    height: 500;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(185, 174, 174);
+    position: relative;
+    overflow: hidden;
+}
+
+.cup {
+    width: 95px;
+    height: 200px;
+    background-color: #736d6d;
+    border: 5px solid #ccc;
+    position: relative;
+    transform: rotate(180deg) translateY(0); 
+    transition: transform 0.5s ease;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#instruction {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: white; 
+    color: black  ;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.casino-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.balance-container {
+    display: flex;
+    align-items: center;
+}
+
+#balance {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.add-balance {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-balance:hover {
+    background-color: #ff9068;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9068; 
+}
